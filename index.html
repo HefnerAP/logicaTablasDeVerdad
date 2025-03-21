@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tablas de Verdad</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <h1>Tablas de Verdad</h1>
+    </header>
+    <main>
+        <section id="controls">
+            <label for="operator">Selecciona un operador lógico:</label>
+            <select id="operator">
+                <option value="AND">AND (∧)</option>
+                <option value="OR">OR (∨)</option>
+                <option value="NOT">NOT (¬)</option>
+                <option value="XOR">XOR (⊕)</option>
+            </select>
+            <button id="generate">Generar Tabla</button>
+        </section>
+        <section id="truthTable">
+            <table>
+                <thead>
+                    <tr>
+                        <th>A</th>
+                        <th>B</th>
+                        <th>Resultado</th>
+                    </tr>
+                </thead>
+                <tbody id="tableBody">
+                    <!-- Filas dinámicas -->
+                </tbody>
+            </table>
+        </section>
+        <section id="explanation">
+            <h2>Explicación del Operador</h2>
+            <p id="description">Selecciona un operador para ver la explicación, un ejemplo y una imagen de referencia.</p>
+            <div id="imageContainer">
+                <img id="operatorImage" src="img/logica.jpeg" alt="Imagen del operador lógico" />
+            </div>
+        </section>
+
+    </main>
+    <script src="js/script.js"></script>
+</body>
+</html>
